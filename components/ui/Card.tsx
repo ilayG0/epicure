@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import {CardProps} from "@/types/card.type";
 
@@ -14,7 +15,7 @@ export default function Card({
   if (variant === "chef") {
     return (
       <article
-        className={`flex flex-col overflow-hidden bg-white`}
+        className={`flex flex-col overflow-hidden bg-white min-w-[180px] snap-start`}
       >
         <div className="relative h-44 w-full">
           <Image
@@ -34,7 +35,7 @@ export default function Card({
   }
   return (
     <article
-      className={`w-[180px] overflow-hidden bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.05)]`}
+      className={`w-[180px] overflow-hidden bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.05)] min-w-[260px] snap-start`}
     >
       <div className="relative h-40 w-full">
         <Image
@@ -45,10 +46,10 @@ export default function Card({
         />
       </div>
       <div className="bg-[#f6efe1] px-3 py-3">
-        <h3 className="text-lg font-medium">{title}</h3>
+        <h3>{title}</h3>
 
         {subtitle && (
-          <p className="mt-1 text-sm text-gray-700">{subtitle}</p>
+          <p>{subtitle}</p>
         )}
 
         {variant === "dish" && description && (

@@ -10,6 +10,5 @@ export type CardProps = {
   subtitle?: string;      
   description?: string;   
   price?: string;        
-  rating?: number;      
+  rating?: number;  
 };
-

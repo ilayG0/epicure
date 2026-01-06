@@ -1,8 +1,10 @@
-export const restaurants = [
+import { Restaurant } from "@/types/restaurant.type";
+
+export const restaurants :  Restaurant[]= [
   {
     id: 1,
-    name: "Carlo",
-    imageUrl: "/assets/images/carlo.png",
+    name: "Claro",
+    imageUrl: "/assets/images/claro.png",
     chef: "Ran Shmueli",
     rating: 4,
   },

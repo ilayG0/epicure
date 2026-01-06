@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,13 +21,18 @@
   }
 
   h1 {
-    @apply text-[24px] md:text-[32px] text-black;
+    @apply text-[24px] md:text-[32px];
   }
-
+  h2 {
+    @apply text-[16px] md:text-[24px];
+  }
   h3 {
-    @apply text-[40px] font-normal;
+    @apply text-[18px] md:text-[40px] font-normal tracking-widest;
   }
   input[type="text"] {
-    @apply text-[12px] text-black;
+    @apply text-[12px];
+  }
+  p {
+    @apply text-[16px] md:text-[24px] tracking-widest font-thin; 
   }
 }
