@@ -8,7 +8,7 @@ export default function SignatureDishes({
   dishes: Dish[];
 }) {
   return (
-    <section className="mt-10 px-4">
+    <section className="mt-10 px-4 pb-4">
       <h2 className="font-light uppercase tracking-widest">
         Signature Dish Of:
       </h2>

@@ -5,13 +5,6 @@
   --foreground: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 @layer base {
   body {
     @apply font-extralight;
@@ -34,5 +27,11 @@
   }
   p {
     @apply text-[16px] md:text-[24px] tracking-widest font-thin; 
+  }
+}
+
+@layer utilities {
+  .bg-epicure {
+    background-color: #FAFAFA;
   }
 }
