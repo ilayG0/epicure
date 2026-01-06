@@ -14,7 +14,7 @@ export default function PopularRestaurants({
       </h2>
 
       <div className="-mx-4 mt-4 overflow-x-auto pb-3">
-        <div className="flex gap-4 px-4 snap-x snap-mandatory">
+        <div className="flex gap-6 px-4 snap-x snap-mandatory">
           {restaurants.map((restaurant) => (
             <Card
               key={restaurant.id}

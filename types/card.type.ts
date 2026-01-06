@@ -5,10 +5,10 @@ export type CardProps = {
 
   imageSrc: string;
   imageAlt: string;
-
+  dieteryType?: string;
   title: string;
   subtitle?: string;      
   description?: string;   
-  price?: string;        
+  price?: number;        
   rating?: number;  
 };
