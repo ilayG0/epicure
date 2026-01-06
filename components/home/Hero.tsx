@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SearchBar from "../ui/search-bar";
 
 export default function Hero() {
   return (
@@ -13,13 +14,15 @@ export default function Hero() {
         />
 
         <div className="absolute inset-0 flex items-center justify-center px-4">
-          <div className="border border-black/15 bg-white/88 px-3 py-3">
+          <div className="w-full border border-black/15 bg-white/88 px-3 py-3">
             <h1 className="text-center font-light leading-snug tracking-widest">
               Epicure works with the top{" "}
               <span className="block md:inline">
                 chef restaurants in Tel Aviv
               </span>
             </h1>
+
+            <SearchBar />
           </div>
         </div>
       </div>
