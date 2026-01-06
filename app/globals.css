@@ -35,3 +35,9 @@
     background-color: #FAFAFA;
   }
 }
+
+@layer components {
+  .ep-link {
+    @apply block font-thin text-[18px] leading-[20px] tracking-[2.8px];
+  }
+}
