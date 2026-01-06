@@ -21,7 +21,7 @@
   }
 
   h1 {
-    @apply text-[32px] text-black;
+    @apply text-[24px] md:text-[32px] text-black;
   }
 
   h3 {

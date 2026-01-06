@@ -1,7 +1,10 @@
+import Hero from "@/components/home/hero"
 
 const Page = () => {
   return (
-    <div className="text-2xl underline">home page</div>
+    <>
+    <Hero/>
+    </>
   )
 }
 
