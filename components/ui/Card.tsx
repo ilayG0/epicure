@@ -63,7 +63,13 @@ export default function Card({
 
           {price && (
             <div className="mt-2 pb-2 flex w-9 justify-between">
-              <p className="font-thin text-[12px]">₪ </p>
+              <Image
+                src="/assets/icons/shekel-icon.svg"
+                alt="₪"
+                width={10}
+                height={20}
+                className="mt-2"
+              />
               <p className="font-normal"> {price}</p>
             </div>
           )}
