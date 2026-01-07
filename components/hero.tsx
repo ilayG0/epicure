@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SearchBar from "../ui/search-bar";
+import SearchBar from "./ui/search-bar";
 
 export default function Hero() {
   return (

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/header/header";
-import Footer from "@/components/layout/footer";
+import Footer from "@/components/layout/footer/links-section";
 
 export const metadata: Metadata = {
   title: "EPICURE",
