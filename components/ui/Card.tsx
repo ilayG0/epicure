@@ -33,7 +33,7 @@ export default function Card({
       </div>
       <div className="flex flex-1 flex-col justify-between bg-[#f6efe1] px-3 pt-2.5">
         <div>
-          <h3>{title}</h3>
+         {variant !== "restaurant-chef" && ( <h3>{title}</h3>)}
 
           {subtitle && <p>{subtitle}</p>}
 

@@ -1,6 +1,6 @@
 import { Restaurant } from "@/types/restaurant.type";
 
-export const restaurants :  Restaurant[]= [
+export const restaurants: Restaurant[] = [
   {
     id: 1,
     name: "Claro",
@@ -20,6 +20,27 @@ export const restaurants :  Restaurant[]= [
     name: "Tiger Lilly",
     imageUrl: "/assets/images/tiger-lily.png",
     chef: "Yanir Green",
+    rating: 4,
+  },
+  {
+    id: 4,
+    name: "Onza",
+    imageUrl: "/assets/images/tiger-lily.png",
+    chef: "Yossi Shitrit",
+    rating: 4,
+  },
+  {
+    id: 5,
+    name: "Kitchen Market",
+    imageUrl: "/assets/images/tiger-lily.png",
+    chef: "Yossi Shitrit",
+    rating: 4,
+  },
+  {
+    id: 6,
+    name: "Mashya",
+    imageUrl: "/assets/images/tiger-lily.png",
+    chef: "Yossi Shitrit",
     rating: 4,
   },
 ];
@@ -63,6 +84,7 @@ export const chefs = [
   {
     id: 1,
     name: "Yossi Shitrit",
+    image: "/assets/images/yossi-shitrit.svg",
     description:
       "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
     restaurants: [4, 5, 6],

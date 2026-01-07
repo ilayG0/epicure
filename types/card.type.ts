@@ -1,4 +1,4 @@
-export type CardVariant = "restaurant" | "dish" | "chef";
+export type CardVariant = "restaurant" | "dish" | "chef" | "restaurant-chef";
 
 export type CardProps = {
   variant: CardVariant;
