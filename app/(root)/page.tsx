@@ -1,12 +1,11 @@
-import Hero from "@/components/home/hero";
-import PopularRestaurants from "@/components/home/popular-restaurants-section";
+import Hero from "@/components/hero";
 import { Restaurant } from "@/types/restaurant.type";
 import { Dish } from "@/types/dish.type";
 import { Icon } from "@/types/icon.type";
-import SignatureDishes from "@/components/home/signature-dishes-section";
-import IconsSection from "@/components/home/icons-section";
-import AboutEpicure from "@/components/home/about-section";
-import ChefOfTheWeek from "@/components/home/chef-of-the-week-section";
+import CarouselSection from "@/components/carousel-section";
+import IconsSection from "@/components/icons-section";
+import AboutEpicure from "@/components/layout/footer/about-section";
+import ChefOfTheWeek from "@/components/chef-of-the-week-section";
 import { Chef } from "@/types/chef.type";
 
 // move to a help function service
@@ -51,12 +50,12 @@ const Page = async () => {
   const icons: Icon[] = await getIcons();
   const about: string = await getAbout();
   const chef: Chef = await getChefOfTheWeek();
-  
+
   return (
     <>
       <Hero />
-      <PopularRestaurants restaurants={restaurants} />
-      <SignatureDishes dishes={dishes} />
+      <CarouselSection items={restaurants} />
+      <CarouselSection items={dishes} />
       <IconsSection icons={icons} />
       <ChefOfTheWeek chef={chef}/>
       <AboutEpicure about={about}/>
