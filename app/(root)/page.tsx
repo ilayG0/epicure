@@ -54,11 +54,13 @@ const Page = async () => {
   return (
     <>
       <Hero />
-      <CarouselSection items={restaurants} />
-      <CarouselSection items={dishes} />
-      <IconsSection icons={icons} />
-      <ChefOfTheWeek chef={chef}/>
-      <AboutEpicure about={about}/>
+      <div className="md:px-30">
+        <CarouselSection items={restaurants} />
+        <CarouselSection items={dishes} />
+        <IconsSection icons={icons} />
+        <ChefOfTheWeek chef={chef} />
+        <AboutEpicure about={about} />
+      </div>
     </>
   );
 };

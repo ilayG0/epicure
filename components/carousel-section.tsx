@@ -27,7 +27,7 @@ export default function CarouselSection({
 
   return (
     <section className="mt-10 px-4 pb-4">
-      <h2 className="font-light uppercase tracking-widest">
+      <h2 className="font-light uppercase tracking-widest md:text-center">
         {isDishes ? "Signature Dish Of:" : "Popular restaurant in epicure:"}
       </h2>
 
@@ -59,10 +59,9 @@ export default function CarouselSection({
             ))}
         </div>
       </div>
-
       <button
         type="button"
-        className="mt-4 flex items-center gap-2 text-sm tracking-[0.18em]"
+        className="flex mt-4 items-center gap-2 text-sm tracking-[0.18em]"
       >
         <p className="font-normal">All Restaurants</p>
         <Image
@@ -72,6 +71,7 @@ export default function CarouselSection({
           height={22}
         />
       </button>
+
     </section>
   );
 }

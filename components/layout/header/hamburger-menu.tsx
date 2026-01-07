@@ -8,7 +8,7 @@ export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div className="md:hidden">
       <button
         type="button"
         aria-label="Open menu"
@@ -53,6 +53,6 @@ export default function HamburgerMenu() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
