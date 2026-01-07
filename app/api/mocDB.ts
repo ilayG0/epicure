@@ -1,8 +1,10 @@
-export const restaurants = [
+import { Restaurant } from "@/types/restaurant.type";
+
+export const restaurants :  Restaurant[]= [
   {
     id: 1,
-    name: "Carlo",
-    imageUrl: "/assets/images/carlo.png",
+    name: "Claro",
+    imageUrl: "/assets/images/claro.png",
     chef: "Ran Shmueli",
     rating: 4,
   },
@@ -27,7 +29,7 @@ export const signatureDishes = [
     id: 1,
     name: "Pad Ki Mao",
     imageUrl: "/assets/images/pad-ki-mao.png",
-    dietaryTagId: [1],
+    dietaryTag: "/assets/icons/spicy.png",
     ingredients:
       "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
     price: 88,
@@ -36,7 +38,7 @@ export const signatureDishes = [
     id: 2,
     name: "Garganzo Frito",
     imageUrl: "/assets/images/garbanzo-frito.png",
-    dietaryTagId: [1],
+    dietaryTag: "/assets/icons/spicy.png",
     ingredients:
       "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
     price: 98,
@@ -45,7 +47,7 @@ export const signatureDishes = [
     id: 3,
     name: "Smoked Pizza",
     imageUrl: "/assets/images/smoked-pizza.png",
-    dietaryTagId: [3],
+    dietaryTag: "/assets/icons/vegan.png",
     ingredients: `Basil dough, cashew "butter", demi-glace, bison & radish`,
     price: 65,
   },
